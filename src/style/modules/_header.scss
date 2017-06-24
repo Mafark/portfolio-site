@@ -1,0 +1,37 @@
+
+.h-name{
+    position: absolute;
+    top: 47%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-clip: content-box;
+    letter-spacing: 3px;
+}
+
+.h-profession{
+    position: absolute;
+    top: 90%;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.h-profession-hidden{
+    top:100%;
+    opacity: 0;
+}
+
+.char {
+    display: inline-block;
+    font-size: $font-largest;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.char-hidden {
+    opacity: 0;
+    transform: scale(3);
+}

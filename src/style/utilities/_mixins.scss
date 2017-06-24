@@ -1,0 +1,3 @@
+@mixin delay($delay) {
+  transition-delay: $delay/10+s !important;
+}

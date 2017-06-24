@@ -1,0 +1,20 @@
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.font-white {
+    color: #FFF;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.delay {
+    @for $i from 0 through 20 {
+        &-#{$i}{
+            @include delay($i);
+        }
+    }
+}

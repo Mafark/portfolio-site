@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300&subset=cyrillic');
+* {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: $font-regular;
+}
+
+h1 {
+    font-size: $font-largest;
+    margin: 0;
+}
+
+h2 {
+    font-size: $font-medium;
+    margin: 0;
+}
