@@ -1,8 +1,12 @@
-var gulp = require('gulp'),
-    watch = require('gulp-watch'),
-    sass = require('gulp-sass'),
-    browserSync = require('browser-sync'),
-    reload = browserSync.reload;
+var gulp         = require('gulp'),
+    watch        = require('gulp-watch'),
+    postcss      = require('gulp-postcss'),
+    sass         = require('gulp-sass'),
+    cleanCSS     = require('gulp-clean-css'),
+    sourcemaps   = require('gulp-sourcemaps'),
+    autoprefixer = require('autoprefixer'),
+    browserSync  = require('browser-sync'),
+    reload       = browserSync.reload;
 
 var path = {
     build: {
@@ -52,6 +56,12 @@ gulp.task('js:build', function() {
 gulp.task('style:build', function() {
     gulp.src(path.src.style)
         .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.init())
+        .pipe(postcss([
+            autoprefixer()
+        ]))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({ stream: true }));
 });
