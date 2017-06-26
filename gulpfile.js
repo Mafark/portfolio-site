@@ -6,6 +6,7 @@ var gulp         = require('gulp'),
     sourcemaps   = require('gulp-sourcemaps'),
     autoprefixer = require('autoprefixer'),
     browserSync  = require('browser-sync'),
+    htmlmin = require('gulp-htmlmin'),
     reload       = browserSync.reload;
 
 var path = {
@@ -42,9 +43,10 @@ var config = {
 };
 
 gulp.task('html:build', function() {
-    gulp.src(path.src.html) //Выберем файлы по нужному пути
-        .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
-        .pipe(reload({ stream: true })); //И перезагрузим наш сервер для обновлений
+    gulp.src(path.src.html)
+        .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest(path.build.html))
+        .pipe(reload({ stream: true }));
 });
 
 gulp.task('js:build', function() {

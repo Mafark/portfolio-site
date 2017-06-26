@@ -1,0 +1,22 @@
+.about-pic {
+    padding: 0;
+}
+
+.about-pic img {
+    width: 100%;
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 50px;
+}
+
+.about-text p {
+    text-align: center;
+}
+
+.about-text h2 {
+    @include lines(20%, $dark-blue);
+}

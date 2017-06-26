@@ -8,15 +8,16 @@
 }
 
 .h-name-container{
+    border: 1px solid;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba($black, 0.2);
     padding: 0px 25px;
     margin: 5px 0;
     transition: 0.5s;
 }
 
 .h-name-char {
-    letter-spacing:5px;
+    letter-spacing:2px;
     display: inline-block;
     font-size: $font-largest;
     opacity: 1;
@@ -35,6 +36,7 @@
     right: 0;
     opacity: 1;
     transition: 1s;
+    font-size: $font-medium;
 }
 
 .h-profession-hidden{

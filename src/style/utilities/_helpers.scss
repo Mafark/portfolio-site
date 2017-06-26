@@ -1,14 +1,29 @@
+.full-width {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
 .title {
     text-align: center;
     text-transform: uppercase;
 }
 
-.font-white {
-    color: #FFF;
+.font-black {
+    color: $black;;
+}
+
+.font-dark-blue {
+    color: $dark-blue;;
 }
 
 .hidden {
     opacity: 0;
+}
+
+.relative {
+    position: relative;
 }
 
 .delay {
