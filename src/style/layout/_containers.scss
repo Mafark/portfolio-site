@@ -11,7 +11,9 @@
 
 .about {
     background: $white;
-    min-height: 400px;
+}
+.about .row {
+    min-height: 600px;
 }
 
 .portfolio {
