@@ -2,14 +2,14 @@
     transition-delay: $delay/10+s !important;
 }
 
-@mixin lines($percent, $color) {
+@mixin lines($length, $color) {
     &::before,
     &::after {
         content: '';
         display: inline-block;
         vertical-align: middle;
         box-sizing: border-box;
-        width: $percent;
+        width: $length;
         height: 3px;
         background: $color;
         @if $color==$dark-blue {
