@@ -17,3 +17,35 @@
     @include lines(20%, $dark-blue);
     margin-bottom: 30px
 }
+
+.gear-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.gear {
+  margin: 5px;
+}
+
+// correct main.js
+.gear-1{
+   transform: translateX(-110%);
+}
+.gear-2{
+    transform: translateX(-10%);
+}
+.gear-3{
+    transform: translateX(-110%);
+}
+.gear-4{
+    transform: translateX(110%);
+}
+.gear-5{
+    transform: translateX(10%);
+}
+.gear-6{
+    transform: translateX(110%);
+}
