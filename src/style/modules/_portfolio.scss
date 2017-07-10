@@ -4,7 +4,7 @@
 }
 
 .portfolio-container {
-  min-height: 800px;
+  height: 100vh;
 }
 
 .portfolio-container .column {
@@ -19,7 +19,7 @@
 .project-container:hover .project {
   filter: grayscale(0%) blur(4px);
   transform: scale(1.1, 1.1);
-  box-shadow:0 0 0 100000px rgba($black, 0.5) inset;
+  box-shadow:0 0 0 2000px rgba($black, 0.5) inset;
 }
 
 .project-container:hover .project-link {
@@ -35,25 +35,25 @@
 .project-1{
   height: 100%;
   width: 100%;
-  background: url('../img/portfolio/site-portfolio.PNG') top center;
+  background: url('../img/portfolio/web-dev.jpg') top center;
   background-size: cover;
 }
 .project-2{
   height: 100%;
   width: 100%;
-  background: url('../img/portfolio/site-emploi.PNG') top center;
+  background: url('../img/portfolio/photographer.jpg') top center;
   background-size: cover;
 }
 .project-3{
   height: 100%;
   width: 100%;
-  background: url('../img/portfolio/site-endoument.PNG') top center;
+  background: url('../img/portfolio/emploi.jpg') top center;
   background-size: cover;
 }
 .project-4{
   height: 100%;
   width: 100%;
-  background: url('../img/portfolio/site-endoument.PNG') top center;
+  background: url('../img/portfolio/endaument.jpg') top center;
   background-size: cover;
 }
 
