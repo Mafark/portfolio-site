@@ -16,19 +16,6 @@
   position: relative;
 }
 
-.project-container:hover .project {
-  filter: grayscale(0%) blur(4px);
-  transform: scale(1.1, 1.1);
-}
-
-.project-container:hover .project-link {
-  opacity: 1;
-}
-
-.project-container:hover .project-bg {
-  opacity: 0.5;
-}
-
 .project-bg {
   background: black;
   opacity: 0;
@@ -91,8 +78,33 @@
   font-weight: 300;
   opacity: 0;
   transition: 0.5s;
+  transform: translateY(40%);
 }
 
 .project-link:hover {
   color:$skyblue;
+}
+
+.project-container:hover .project {
+  filter: grayscale(0%) blur(4px);
+  transform: scale(1.1, 1.1);
+}
+
+.project-container:hover .project-link {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.project-container:hover .project-bg {
+  opacity: 0.5;
+}
+
+.github-link {
+  text-align: center;
+  font-size: $font-light;
+  padding: 20px;
+}
+
+.github-link a {
+    font-size: $font-light;
 }
