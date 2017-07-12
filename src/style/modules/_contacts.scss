@@ -1,0 +1,13 @@
+.contacts {
+  padding: 100px 0;
+  text-align: center;
+
+  h2 {
+    @include lines(200px, $white, $dark);
+    margin: 0 0 50px;
+  }
+}
+
+.contact-mail{
+  margin-top: 30px;
+}
