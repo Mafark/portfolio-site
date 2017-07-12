@@ -43,3 +43,16 @@
     top:100%;
     opacity: 0;
 }
+
+@media screen and (max-width: 480px) {
+  .h-name-char {
+    font-size: $font-largest - 20px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .h-name-char {
+    font-size: $font-largest - 25px;
+    letter-spacing:0px;
+  }
+}
