@@ -14,7 +14,7 @@
 }
 
 .about-text h2 {
-    @include lines(20%, $dark-blue);
+    @include lines(20%, $dark-blue, $white);
     margin-bottom: 30px
 }
 

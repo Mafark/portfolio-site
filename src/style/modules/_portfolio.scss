@@ -1,5 +1,5 @@
 .portfolio h2 {
-    @include lines(20%, $white);
+    @include lines(20%, $white, $black);
     padding: 50px 0;
 }
 

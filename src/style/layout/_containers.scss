@@ -19,10 +19,15 @@
 
 .portfolio {
     height: 100%;
-    background: $dark-blue;
+    background: $black;
 }
 
 .contacts {
-  height: 100vh;
+  height: 50vh;
+  background: $dark-blue;
+}
+
+.footer {
+  height: 100px;
   background: $blue;
 }
